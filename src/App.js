@@ -11,7 +11,7 @@ function App() {
     const fetchToken = async () => {
       
       // replace with your own Person ID
-      const personId = "<your-person-id>" 
+      const personId = process.env.REACT_APP_PERSON_ID
       
       // fetch Parafin token from server
       const response = await axios.get(`/parafin/token/${personId}`) 
